@@ -43,7 +43,7 @@ export default class Landing extends Component {
         dropdownArr
       });
     })
-    .catch(function (error) {
+    .catch((error) => {
       console.log(error);
     });
   }

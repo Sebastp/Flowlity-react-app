@@ -1,7 +1,7 @@
 var axios = require('axios');
 
-test('test REST API response', () => {
-  axios.post('/getdata').then(res=>{
+test('test REST API response', async (done) => {
+  await axios.post('http://localhost:8080/getdata').then(res=>{
     let fetchedDataLen = (res.data).length
 
     expect(fetchedDataLen).toBeGreaterThan(0);

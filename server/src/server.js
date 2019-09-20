@@ -29,6 +29,7 @@ app.use(compression())
 
 
 app.post('/getdata', function (req, res) {
+  console.log('api gett');
   return res.send(data)
 })
 
