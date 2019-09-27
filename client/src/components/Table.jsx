@@ -26,9 +26,10 @@ const columns = [
 
 const Table = (props) => {
   const {productData} = props
-  
+
   return (
     <div className="datatable">
+      
       <div className="row datatable-topLabels">
         <div className="col-3">
           Product ID
@@ -63,6 +64,7 @@ const Table = (props) => {
             </div>
           </div>
         ))
+
       }
     </div>
   )
